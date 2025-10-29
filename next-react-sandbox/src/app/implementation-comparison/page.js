@@ -1,4 +1,5 @@
 import AboutMe from '../../components/about-me.js';
+import PressForQuack from '../../components/press-for-quack.js';
 
 export default function ImplementCompare() {
     return (
@@ -11,6 +12,7 @@ export default function ImplementCompare() {
                 </p>
             </div>
             <AboutMe />
+            <PressForQuack />
         </>
     );
 }
