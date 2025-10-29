@@ -12,6 +12,9 @@
 // for some cases, using index would be a terrible idea as it's by nature not a unique piece of information
 // but for this case the usage is fine, despite it keep screaming at me
 
+// I may have returned wrong in the .map()
+// now it stops screaming at me lol
+
 // also for some reason it doesn't give much details in terminal
 // it only tells me where exactly it is in the web console
 
@@ -20,10 +23,6 @@ import { aboutText } from './DUMMY.js';
 export default function AboutMe() {
     // console.log('about me?');
     return aboutText.map((paragraph, i) => {
-        return (
-            <>
-                <p key={i}>{paragraph}</p>
-            </>
-        );
+        return <p key={i}>{paragraph}</p>;
     });
 }
